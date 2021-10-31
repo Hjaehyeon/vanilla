@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<header id="weather">
+  <span></span>
+  <span></span>
+</header>
+<div class="clock">
+  <span>00:00:00</span>
+</div>
+<div id="login" class="hidden">
+<form>
+  <input type="text" placeholder="이름을 입력하세요!" required maxlength="10">
+  <input type="submit" value="Log In">
+</form>
+</div>
+<h1 id="greeting" class="hidden"></h1>
+
+<form id="todo-form">
+  <input type="text" placeholder="할 일을 작성해주세요!" required>
+</form>
+<ul id="todo-list"></ul>
+
+
+<script src="js/clock.js"></script>
+<script src="js/login.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/waether.js"></script>
+
+<script src="https://kit.fontawesome.com/84d4c88ffa.js" crossorigin="anonymous"></script>
+
+</body> 
+
+</html>

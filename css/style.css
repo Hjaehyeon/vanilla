@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+@import "reset.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Ubuntu, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 50px 0 70px;
+  text-shadow: 0px 0px 10px fuchsia, 3px 3px blue, -3px -3px darkblue;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#weather {
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 0 0 10px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 100%;
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clock span {
+  text-shadow: 0px 0px 10px fuchsia, 3px 3px blue, -3px -3px darkblue;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 70px 0 130px;
+}
+
+#login input:first-child {
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 30px fuchsia;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 20px;
+}
+
+#login input:first-child::placeholder {
+  color: white;
+}
+
+#login input:last-child {
+  border: none;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#todo-form {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#todo-form input {
+  width: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 20px;
+  color: white;
+  padding: 6px;
+  box-shadow: 0 0 30px fuchsia;
+}
+
+#todo-form input::placeholder {
+  color: white;
+}
+
+#todo-list {
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#todo-list li {
+  padding: 14px 30px 2px;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-list li span {
+  background-color: rgba(34, 34, 34, 0.4);
+  box-shadow: 0px 0px 10px fuchsia, 2px 2px blue, -2px -2px darkblue;
+  color: white;
+  padding: 6px;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+#todo-list li button {
+  border: none;
+  color: red;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.back {
+  position: absolute;
+  opacity: .7;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
